@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Builtzaar offers affordable home repair and renovation services across the Greater Toronto Area. Plumbing, electrical, HVAC, and more.">
-  <title>Builtzaar – Complete Home Services in GTA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuiltZaar - Your One-Stop Home Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- For chatbot -->
 </head>
 <body>
 
-  <!-- Header with navigation bar -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="plumbing.html">Plumbing</a>
-      <a href="electrical.html">Electrical</a>
-      <a href="hvac.html">HVAC</a>
-      <a href="renovation.html">Renovation</a>
-      <a href="outdoor.html">Outdoor</a>
-    </nav>
-  </header>
+    <!-- Header Section with Background Image -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>BuiltZaar</h1>
+                <p>Your Trusted Home Services Provider</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </div>
+    </header>
 
-  <!-- Main Content -->
-  <h1>Welcome to Builtzaar</h1>
-  <p>Your one-stop solution for all home repair, renovation, and construction needs across the GTA (Greater Toronto Area).</p>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-item">
+                <img src="images/plumbing.jpg" alt="Plumbing Services">
+                <h3>Plumbing</h3>
+                <p>Quick, affordable plumbing services for your home needs. Whether it's a leak or a new installation, we've got you covered.</p>
+                <a href="plumbing.html" class="btn">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="images/electrical.jpg" alt="Electrical Services">
+                <h3>Electrical</h3>
+                <p>Our licensed electricians handle everything from wiring to lighting installations. Get your electrical systems up to code!</p>
+                <a href="electrical.html" class="btn">Learn More</a>
+            </div>
+            <div class="service-item">
+                <img src="images/hvac.jpg" alt="HVAC Services">
+                <h3>HVAC</h3>
+                <p>Stay comfortable year-round with our HVAC services. From installations to repairs, trust us for all your heating and cooling needs.</p>
+                <a href="hvac.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-  <img src="https://images.unsplash.com/photo-1581090700227-4c4d9231cf8c" alt="Home Services Overview">
+    <!-- Contact Section with a Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or need assistance? We're here to help. Get in touch with us now!</p>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
 
-  <h2>What We Offer</h2>
-  <ul>
-    <li><a href="plumbing.html"># Plumbing – Leaks, sump pumps, basement plumbing</a></li>
-    <li><a href="electrical.html"># Electrical – Repairs, wiring, panel upgrades</a></li>
-    <li><a href="hvac.html"># HVAC – Heating, cooling, ventilation</a></li>
-    <li><a href="renovation.html"># New Construction & Renovations</a></li>
-    <li><a href="outdoor.html"># Driveways, Patios, Decks & Fencing</a></li>
-  </ul>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BuiltZaar | All Rights Reserved</p>
+        <p>Contact: <a href="mailto:builtzaar@gmail.com">builtzaar@gmail.com</a> | Phone: +1 437 799 8171</p>
+    </footer>
 
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>Affordable pricing lower than market rates</li>
-    <li>Certified professionals for every trade</li>
-    <li>Complete legal basement finishing</li>
-    <li>Custom kitchen and home renovations</li>
-    <li>We cover everything from roofing to concrete sidewalks</li>
-  </ul>
-
-  <div class="contact">
-    <h3>Contact Us</h3>
-    <p>📞 <a href="tel:+14377998171">+1 437 799 8171</a></p>
-    <p>📧 <a href="mailto:builtzaar@gmail.com">builtzaar@gmail.com</a></p>
-    <p>Serving all of GTA (Ontario)</p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Builtzaar – All rights reserved.</p>
-  </footer>
+    <!-- Chatbot Integration (e.g., Tawk.to) -->
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function() {
+                var script = document.createElement("script");
+                script.async = true;
+                script.src = 'https://embed.tawk.to/your_tawk_to_code';
+                script.charset = 'UTF-8';
+                script.setAttribute('crossorigin', '*');
+                document.body.appendChild(script);
+            })();
+        });
+    </script>
 
 </body>
 </html>
